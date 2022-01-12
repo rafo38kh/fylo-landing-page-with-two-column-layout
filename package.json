@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "np",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "sass --watch scss/main.scss css/style.css",
+    "build:scss": "sass scss/main.scss css/style.css"
+  },
+  "author": "Rafo Khachikyan",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  },
+  "dependencies": {}
+}
