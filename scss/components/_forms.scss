@@ -2,23 +2,46 @@
 
 .fylo {
   &__form {
+    @media (min-width: 1140px) {
+      display: flex;
+      align-items: start;
+    }
+
+    &--subscription {
+      @media (min-width: 810px) {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+      }
+    }
   }
 
   &__form-wrapper {
+    @media (min-width: 1140px) {
+      width: 60%;
+    }
     &--subscription {
       width: 22rem;
       margin: 0 auto;
+      @media (min-width: 810px) {
+        width: 40rem;
+      }
     }
   }
 
   &__email {
     width: 100%;
-    max-width: 32rem;
     padding: 1.2rem;
     border-radius: 0.3rem;
     border: 0.05rem solid $color-veryDarkBlue;
     margin-bottom: 0.1rem;
     &--accessible {
+      max-width: 32rem;
+
+      @media (min-width: 1140px) {
+        max-width: 41rem;
+        width: 100%;
+      }
     }
 
     &--subscription {

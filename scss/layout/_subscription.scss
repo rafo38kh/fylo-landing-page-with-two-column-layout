@@ -1,0 +1,9 @@
+.subscription {
+  &__wrapper {
+    @media (min-width: 810px) {
+      text-align: left;
+      max-width: 46rem;
+      //   width: 100%;
+    }
+  }
+}

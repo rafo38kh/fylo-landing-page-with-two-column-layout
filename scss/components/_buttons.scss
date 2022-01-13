@@ -11,6 +11,9 @@
   font-weight: 700;
 
   &__accessible {
+    @media (min-width: 1140px) {
+      width: 30%;
+    }
   }
 
   &__subscription {

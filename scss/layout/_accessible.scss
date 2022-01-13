@@ -1,7 +1,13 @@
 .accessible {
   &__picture {
+    @media (min-width: 810px) {
+      width: 40rem;
+    }
   }
 
   &__wrapper {
+    @media (min-width: 810px) {
+      text-align: left;
+    }
   }
 }

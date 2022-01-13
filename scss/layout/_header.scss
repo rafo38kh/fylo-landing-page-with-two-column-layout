@@ -37,12 +37,20 @@
     &--primary {
       margin: 5rem 0 2rem;
       line-height: 1.5;
+      font-size: clamp(2.3rem, 3vw, 4rem);
+      @media (min-width: 810px) {
+        margin: 0 0 2rem;
+      }
     }
 
     &--secondary {
       font-size: 1.6rem;
       text-align: center;
       margin-bottom: 3rem;
+
+      @media (min-width: 810px) {
+        text-align: left;
+      }
     }
 
     &--tertiary {
@@ -51,7 +59,7 @@
   }
 
   &__subtitle {
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.7vw, 2rem);
     line-height: 1.5;
     margin-bottom: 3rem;
 
