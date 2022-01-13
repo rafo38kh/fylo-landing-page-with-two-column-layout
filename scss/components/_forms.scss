@@ -1,0 +1,36 @@
+@use "../abstracts/index" as *;
+
+.fylo {
+  &__form {
+  }
+
+  &__form-wrapper {
+    &--subscription {
+      width: 22rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__email {
+    width: 100%;
+    max-width: 32rem;
+    padding: 1.2rem;
+    border-radius: 0.3rem;
+    border: 0.05rem solid $color-veryDarkBlue;
+    margin-bottom: 0.1rem;
+    &--accessible {
+    }
+
+    &--subscription {
+      padding: 1rem;
+    }
+  }
+
+  &__error {
+    text-align: left;
+    font-size: 1.3rem;
+    color: $color-error;
+    margin-bottom: 0.1rem;
+    visibility: hidden;
+  }
+}

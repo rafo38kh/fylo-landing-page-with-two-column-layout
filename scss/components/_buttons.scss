@@ -1,7 +1,20 @@
+@use "../abstracts/index" as *;
+
 .button {
+  background-color: $color-brightBlue;
+  color: $color-lightGrayishBlue;
+  width: 100%;
+  max-width: 32rem;
+  border-radius: 0.3rem;
+  border: 0.05rem solid transparent;
+  padding: 1.2rem;
+  font-weight: 700;
+
   &__accessible {
   }
 
   &__subscription {
+    width: 22rem;
+    padding: 1rem;
   }
 }

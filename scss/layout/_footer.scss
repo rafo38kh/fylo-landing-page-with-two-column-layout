@@ -1,9 +1,9 @@
 @use "../abstracts/index" as *;
 
 .footer {
-  // background-color: $color-footer--background;
-  // color: $color-silver;
-  padding: 25rem 2rem 2rem;
+  background-color: $color-veryDarkBlue;
+  color: $color-lightGrayishBlue;
+  padding: 5rem 3rem;
 
   @media (min-width: 1140px) {
     padding: 15rem 10rem 5rem;
@@ -12,14 +12,14 @@
   &__info {
     @media (min-width: 1140px) {
       display: grid;
-      grid-template-columns: 2fr 1fr auto;
+      grid-template-columns: 1fr 2fr auto;
     }
   }
 
   &__contacts {
     padding: 0 0 0 4rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
 
   &__location {
@@ -73,11 +73,12 @@
   }
 
   &__menu {
-    margin: 10rem 0;
+    margin: 6rem 0;
 
     @media (min-width: 680px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
     }
 
     @media (min-width: 1140px) {
@@ -98,12 +99,11 @@
   }
 
   &__link {
-    // color: $color-silver;
+    color: $color-lightGrayishBlue;
     transition: all 0.3s;
 
     &:hover {
-      // color: $color-White;
-      text-decoration: underline;
+      color: $color-brightBlue;
     }
   }
 
@@ -123,7 +123,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   &__social--item {
@@ -132,11 +132,11 @@
   &__social--link {
     &:hover {
       .footer__social--svg {
-        // border: 0.1rem solid $color-cyan;
+        border: 0.1rem solid $color-brightBlue;
       }
 
       .footer__social--svg path {
-        // fill: $color-cyan;
+        fill: $color-brightBlue;
       }
     }
   }
@@ -144,59 +144,40 @@
   &__social--link svg {
     width: 2.5rem;
     height: 2.5rem;
-    // border: 0.1rem solid $color-White;
+    border: 0.1rem solid $color-lightGrayishBlue;
     padding: 0.5rem;
     border-radius: 50%;
     transition: all 0.3s;
   }
 
   &__social--svg path {
-    // fill: $color-White;
+    fill: $color-lightGrayishBlue;
   }
 
   &__wrapper {
   }
 
   &__attribution {
+    color: $color-lightGray;
     width: 100%;
     font-size: 1rem;
     text-align: center;
     margin: 0 auto;
-    padding: 0rem 0 1rem 0;
+    padding: 1rem 0 0 0;
 
     &-link:link,
     &-link:visited {
       text-transform: uppercase;
-      // color: $color-cyan;
+      color: $color-lightGray;
       text-decoration: none;
       font-weight: 400;
+      transition: all 0.3s;
     }
 
     &-link:hover,
     &-link:active {
+      color: $color-brightBlue;
       text-decoration: underline;
     }
   }
 }
-
-// &__attribution {
-//   width: 100%;
-//   font-size: clamp(1.2rem, 2vw, 1.4rem);
-//   text-align: center;
-//   margin: 0 auto;
-//   padding: 0rem 0 1rem 0;
-
-//   &-link:link,
-//   &-link:visited {
-//     text-transform: uppercase;
-//     // color: $color-primary;
-//     text-decoration: none;
-//     font-weight: 400;
-//   }
-
-//   &-link:hover,
-//   &-link:active {
-//     // color: $color-primary;
-//     text-decoration: underline;
-//   }
-// }

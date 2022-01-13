@@ -71,7 +71,7 @@
                 placeholder="Enter your email"
                 aria-label="Email input"
               />
-              <p class="fylo__error js-error"></p>
+              <p class="fylo__error js-error">please check your email</p>
             </div>
 
             <button
@@ -87,6 +87,13 @@
       </section>
 
       <section class="productive__section">
+        <picture class="productive__picture--bg">
+          <source
+            srcset="images/bg-curve-mobile.svg"
+            media="(min-width: 810px)"
+          />
+          <img src="images/bg-curve-desktop.svg" alt="MDN" />
+        </picture>
         <div class="container container__productive">
           <img
             src="images/illustration-2.svg"
@@ -104,7 +111,7 @@
                 Never let location be an issue when accessing your files. Fylo
                 has you covered for all of your file storage needs.
               </p>
-              <p class="fylo__subtitle fylo__subtitle--tertiary">
+              <p class="fylo__subtitle fylo__subtitle--secondary">
                 Securely share files and folders with friends, family and
                 colleagues for live collaboration. No email attachments
                 required!
@@ -127,7 +134,7 @@
               </p>
               <div class="productive__human-wrapper">
                 <img
-                  src="./images/avatar-testimonial.jpg"
+                  src="images/avatar-testimonial.jpg"
                   alt="Kyle Burton avatar"
                   class="productive__human"
                 />
@@ -154,14 +161,14 @@
         </p>
 
         <form action="#" class="fylo__form js-form">
-          <div class="fylo__form-wrapper">
+          <div class="fylo__form-wrapper fylo__form-wrapper--subscription">
             <input
               name="email"
               class="fylo__email fylo__email--subscription js-input"
               placeholder="email@example.com"
               aria-label="Email input"
             />
-            <p class="fylo__error js-error"></p>
+            <p class="fylo__error js-error">Please check your email</p>
           </div>
 
           <button

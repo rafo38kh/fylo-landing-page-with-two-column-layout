@@ -1,43 +1,116 @@
+@use "../abstracts/index" as *;
+
 .productive {
   &__section {
+    position: relative;
+    background-color: $color-lightGrayishBlue;
   }
 
   &__picture {
+    margin: 0 auto 8rem auto;
+    width: 32rem;
+    max-width: 60rem;
+    &--bg {
+      position: absolute;
+      top: -2%;
+    }
   }
 
   &__info-wrapper {
+    padding: 2rem;
   }
 
   &__text-wrapper {
+    margin-bottom: 4rem;
   }
 
   &__link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    border-bottom: 0.1rem solid $color-moderateCyan;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   &__link {
+    font-size: 1.4rem;
+    &:active,
+    &:visited {
+      color: $color-moderateCyan;
+    }
   }
 
   &__arrow {
+    width: 1.5rem;
   }
 
   &__card {
+    position: relative;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 3.5rem 2rem 2.5rem 2rem;
+    box-shadow: 10px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    width: 28rem;
+    margin: 0 auto;
+
+    &::before {
+      content: url("./../images/icon-quotes.svg");
+      position: absolute;
+      top: 1.5rem;
+      left: 2rem;
+    }
   }
 
   &__paragraph {
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
+    line-height: 1.8;
   }
 
   &__human-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
   }
 
   &__human {
+    width: 3rem;
+    border-radius: 50%;
   }
 
   &__human-info {
   }
 
   &__human-name {
+    font-size: 1rem;
+    font-weight: 700;
   }
 
   &__human-position {
+    font-size: 0.9rem;
+    font-weight: 400;
   }
+
+  //   &__card {
+  //   }
+
+  //   &__paragraph {
+  //   }
+
+  //   &__human-wrapper {
+  //   }
+
+  //   &__human {
+  //   }
+
+  //   &__human-info {
+  //   }
+
+  //   &__human-name {
+  //   }
+
+  //   &__human-position {
+  //   }
 }

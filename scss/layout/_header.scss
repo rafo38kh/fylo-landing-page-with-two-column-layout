@@ -1,20 +1,33 @@
+@use "../abstracts/index" as *;
+
 .fylo {
   &__header {
   }
 
   &__logo {
-  }
+    width: 8rem;
+    &--header {
+    }
 
-  &__logo--header {
+    &--footer {
+      width: 17rem;
+      margin-bottom: 5rem;
+      filter: brightness(0) invert(1);
+    }
   }
 
   &__list {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.2rem;
   }
 
   &__item {
   }
 
   &__link {
+    color: $color-veryDarkBlue;
   }
 
   &__main {
@@ -22,40 +35,34 @@
 
   &__title {
     &--primary {
+      margin: 5rem 0 2rem;
+      line-height: 1.5;
     }
 
     &--secondary {
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 3rem;
     }
 
     &--tertiary {
+      margin-bottom: 2rem;
     }
   }
 
   &__subtitle {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+
     &--primary {
     }
 
     &--secondary {
+      color: $color-desaturatedBlue;
     }
 
     &--tertiary {
     }
-  }
-
-  &__form {
-  }
-
-  &__form-wrapper {
-  }
-
-  &__email {
-    &--accessible {
-    }
-
-    &--subscription {
-    }
-  }
-
-  &__error {
   }
 }

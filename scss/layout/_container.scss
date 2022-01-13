@@ -1,10 +1,26 @@
+@use "../abstracts/index" as *;
+
 .container {
   &__header {
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__accessible {
+    padding: 6rem 3rem;
+    text-align: center;
+  }
+
+  &__productive {
+    padding: 5rem 0;
   }
 
   &__subscription {
+    background-color: $color-desaturatedBlue;
+    color: $color-lightGrayishBlue;
+    text-align: center;
+    padding: 5rem 4rem 6rem 4rem;
   }
 }
