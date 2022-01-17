@@ -2,30 +2,47 @@
 
 .fylo {
   &__form {
-    @media (min-width: 1140px) {
-      display: flex;
-      align-items: start;
+    max-width: 50rem;
+    margin: 0 auto;
+    &--accessible {
+      @media (min-width: 810px) {
+        margin: unset;
+      }
+
+      @media (min-width: 1140px) {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        max-width: 52rem;
+        width: 100%;
+      }
     }
 
     &--subscription {
+      display: flex;
+      flex-direction: column;
+      padding: 0 3rem;
       @media (min-width: 810px) {
-        display: flex;
-        flex-direction: column;
-        padding-left: 1rem;
+        width: 40rem;
+      }
+
+      @media (min-width: 1140px) {
+        grid-column: 2/3;
+        width: 100%;
+        padding: 0 0 0 5rem;
+        max-width: 52rem;
       }
     }
   }
 
   &__form-wrapper {
-    @media (min-width: 1140px) {
-      width: 60%;
-    }
-    &--subscription {
-      width: 22rem;
-      margin: 0 auto;
-      @media (min-width: 810px) {
-        width: 40rem;
+    &--accessible {
+      @media (min-width: 1140px) {
+        width: 60%;
       }
+    }
+
+    &--subscription {
     }
   }
 
@@ -36,16 +53,12 @@
     border: 0.05rem solid $color-veryDarkBlue;
     margin-bottom: 0.1rem;
     &--accessible {
-      max-width: 32rem;
-
-      @media (min-width: 1140px) {
-        max-width: 41rem;
-        width: 100%;
-      }
     }
 
     &--subscription {
-      padding: 1rem;
+      @media (min-width: 1140px) {
+        padding: 1.5rem;
+      }
     }
   }
 
@@ -55,5 +68,8 @@
     color: $color-error;
     margin-bottom: 0.1rem;
     visibility: hidden;
+
+    &--subscription {
+    }
   }
 }

@@ -4,20 +4,29 @@
   background-color: $color-brightBlue;
   color: $color-lightGrayishBlue;
   width: 100%;
-  max-width: 32rem;
+  //   max-width: 32rem;
   border-radius: 0.3rem;
   border: 0.05rem solid transparent;
   padding: 1.2rem;
   font-weight: 700;
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 
   &__accessible {
     @media (min-width: 1140px) {
-      width: 30%;
+      width: 40%;
     }
   }
 
   &__subscription {
-    width: 22rem;
-    padding: 1rem;
+    max-width: 24rem;
+    @media (min-width: 1140px) {
+      padding: 1.5rem;
+      width: 20rem;
+    }
   }
 }

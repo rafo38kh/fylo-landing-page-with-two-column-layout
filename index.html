@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Raleway:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
@@ -63,8 +63,8 @@
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
-          <form action="#" class="fylo__form js-form">
-            <div class="fylo__form-wrapper">
+          <form action="#" class="fylo__form fylo__form--accessible js-form">
+            <div class="fylo__form-wrapper fylo__form-wrapper--accessible">
               <input
                 name="email"
                 class="fylo__email fylo__email--accessible js-input"
@@ -170,7 +170,9 @@
               placeholder="email@example.com"
               aria-label="Email input"
             />
-            <p class="fylo__error js-error">Please check your email</p>
+            <p class="fylo__error fylo__error--subscription js-error">
+              Please check your email
+            </p>
           </div>
 
           <button
