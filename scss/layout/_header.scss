@@ -38,6 +38,12 @@
 
   &__link {
     color: $color-veryDarkBlue;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-desaturatedBlue;
+    }
+
     @media (min-width: 810px) {
       font-size: 1.7rem;
     }

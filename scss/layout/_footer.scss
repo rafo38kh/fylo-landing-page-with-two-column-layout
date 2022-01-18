@@ -166,6 +166,7 @@
 
   &__social--svg path {
     fill: $color-lightGrayishBlue;
+    transition: all 0.3s;
   }
 
   &__wrapper {
