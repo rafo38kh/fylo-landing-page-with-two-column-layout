@@ -114,11 +114,18 @@ body {
     padding: 1.5rem;
   }
 }
+.fylo__email:focus {
+  outline: 0.2rem solid #3c9f8f;
+}
+.fylo .email-error {
+  outline: 0.2rem solid #d69aae;
+}
 .fylo__error {
   text-align: left;
   font-size: 1.3rem;
   color: #d69aae;
   margin-bottom: 0.1rem;
+  opacity: 0;
   visibility: hidden;
 }
 .fylo__logo {
@@ -477,31 +484,12 @@ body {
 .footer__contacts {
   padding: 0 0 0 4rem;
 }
-.footer__location {
-  position: relative;
-  margin-bottom: 2rem;
-  line-height: 2.5rem;
-  max-width: 37rem;
-}
-@media (min-width: 680px) {
-  .footer__location {
-    padding-right: 5rem;
-  }
-}
-.footer__location::before {
-  content: url("./../images/icon-location.svg");
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  top: 0.5rem;
-  left: -4rem;
-}
 .footer__number {
   position: relative;
   margin-bottom: 2rem;
 }
 .footer__number::before {
-  content: url("./../images/icon-phone.svg");
+  content: url("../images/icon-phone.svg");
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -512,7 +500,7 @@ body {
   position: relative;
 }
 .footer__email::before {
-  content: url("./../images/icon-email.svg");
+  content: url("../images/icon-email.svg");
   position: absolute;
   width: 1rem;
   height: 1rem;

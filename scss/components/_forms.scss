@@ -52,6 +52,7 @@
     border-radius: 0.3rem;
     border: 0.05rem solid $color-veryDarkBlue;
     margin-bottom: 0.1rem;
+
     &--accessible {
     }
 
@@ -62,11 +63,20 @@
     }
   }
 
+  &__email:focus {
+    outline: 0.2rem solid hsl(170, 45%, 43%);
+  }
+
+  .email-error {
+    outline: 0.2rem solid hsl(340, 42%, 72%);
+  }
+
   &__error {
     text-align: left;
     font-size: 1.3rem;
     color: $color-error;
     margin-bottom: 0.1rem;
+    opacity: 0;
     visibility: hidden;
 
     &--subscription {
