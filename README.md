@@ -25,7 +25,7 @@ This is a solution to the [Fylo Landing Page with Two Column Layout Challenge on
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-with-bem-css-grid-flexbox-js-DfXScUORW](https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-with-bem-css-grid-flexbox-js-DfXScUORW)
 - Live Site URL: [https://rafo38kh.github.io/fylo-landing-page-with-two-column-layout/](https://rafo38kh.github.io/fylo-landing-page-with-two-column-layout/)
 
 ## My process
