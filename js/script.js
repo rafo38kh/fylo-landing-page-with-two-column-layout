@@ -38,30 +38,3 @@ forms.forEach((form) => form.addEventListener("submit", checkForm));
 window.addEventListener("load", () =>
   inputs.forEach((input) => (input.value = ""))
 );
-// const checkinput = (e, input, error) => {
-//   const email = input.value.trim();
-//   if (email == null || !checkEmail(input) || email === "") {
-//     e.preventDefault();
-//     error.style.visibility = "visible";
-//     input.style.classList.add("email-error");
-//   } else {
-//     error.style.visibility = "hidden";
-//     input.style.classList.remove("email-error");
-//   }
-// };
-
-// const checkForm = function () {
-//   buttons.forEach((el) => {
-//     if (el.classList.contains("button__accessible")) {
-//       checkinput(accessInput, accessErrorr);
-//     } else {
-//       checkinput(subscrInput, subscrError);
-//     }
-//   });
-// };
-
-// buttons.forEach((el) => el.addEventListener("submit", checkForm));
-
-// window.onload = function () {
-//   inputs.forEach((el) => (el.value = ""));
-// };
